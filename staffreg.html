@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Webinar Registration</title>
+  <link rel="stylesheet" href="staffreg.css" />
+  <style>
+    body, h1, h2, p, label, a, select, option {
+      color: white !important;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    label {
+      font-size: 18px;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .input-group input,
+    .input-group select {
+      font-size: 16px;
+      padding: 10px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      margin-bottom: 16px;
+    }
+
+    button {
+      background: linear-gradient(90deg, #ff416c, #007cf0);
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #ff1e56, #005be0);
+    }
+
+    a {
+      color: #66ccff;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="split-container">
+    <div class="left-side">
+      <div class="intro-text">
+        <h1>SJCE Webinar</h1>
+        <p>Empower your expertise with cutting-edge sessions across tech domains. Join us now!</p>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <div class="form-container fade-in">
+        <h2>Webinar Registration Form for Staff</h2>
+        <p class="signin-note">Already registered? <a href="welcome.html">Sign In here</a></p>
+
+        <form>
+          <div class="input-group">
+            <label for="staff-id">Staff ID</label>
+            <input type="text" id="staff-id" required />
+          </div>
+
+          <div class="input-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required />
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email-id</label>
+            <input type="email" id="email" required />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required />
+          </div>
+
+          <div class="input-group">
+            <label for="domain">Domain</label>
+            <input type="text" id="domain" required />
+          </div>
+
+          <div class="input-group">
+            <label for="experience">Years of Experience</label>
+            <input type="number" id="experience" required />
+          </div>
+
+          <div class="input-group">
+            <label for="department">Department</label>
+            <select id="department" required>
+              <option value="" disabled selected>Select your department</option>
+              <option value="CSE">CSE</option>
+              <option value="ECE">ECE</option>
+              <option value="MECH">MECH</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required />
+          </div>
+
+          <div class="input-group">
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+              <option value="" disabled selected>Select your gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

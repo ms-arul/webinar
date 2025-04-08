@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background: url('a1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.split-container {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.left-side,
+.right-side {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side {
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.left-side h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.left-side p {
+  font-size: 1.25rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.right-side {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.signin-note {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.signin-note a {
+  color: #66ccff;
+  text-decoration: none;
+}
+
+.signin-note a:hover {
+  text-decoration: underline;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+select:invalid {
+  color: #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  font-size: 1.1rem;
+  background: linear-gradient(to right, #ff416c, #007cf0);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #ff4b2b, #1e90ff);
+}
+
+/* === Responsive tweaks === */
+@media (max-width: 768px) {
+  .split-container {
+    flex-direction: column-reverse;
+  }
+
+  .left-side,
+  .right-side {
+    padding: 30px 20px;
+  }
+
+  .left-side h1 {
+    font-size: 2rem;
+  }
+
+  .left-side p {
+    font-size: 1rem;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  label, input, select, button {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 14px;
+  }
+}
